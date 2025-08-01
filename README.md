@@ -6,21 +6,21 @@
 
 ---
 
-## 🌟 Overview
+## Overview
 
 **SentinelGem** is a privacy-first, offline cybersecurity assistant that leverages Google's cutting-edge **Gemma 3n** model to protect vulnerable users in high-risk environments. Built specifically for journalists, NGOs, activists, and field workers operating in areas with limited connectivity or surveillance concerns.
 
-### 🎯 Key Features
+### Key Features
 
-- **🔒 Fully Offline**: No cloud dependencies, complete privacy protection
-- **🧠 Multimodal AI**: Analyzes screenshots (OCR), voice recordings (Whisper), and system logs
-- **⚡ Real-time Detection**: Phishing, social engineering, malware, and surveillance threats
-- **📊 Auto-Generated Reports**: Creates detailed Jupyter notebooks for each analysis
-- **🎛️ Adaptive Intelligence**: Learns from patterns and improves detection over time
+- **Fully Offline**: No cloud dependencies, complete privacy protection
+- **Multimodal AI**: Analyzes screenshots (OCR), voice recordings (Whisper), and system logs
+- **Real-time Detection**: Phishing, social engineering, malware, and surveillance threats
+- **Auto-Generated Reports**: Creates detailed Jupyter notebooks for each analysis
+- **Adaptive Intelligence**: Learns from patterns and improves detection over time
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -71,17 +71,17 @@ print(f"Recommendations: {result.recommendations}")
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Core Components
 
 ```
-🧠 Gemma 3n Inference Engine    ← Primary AI reasoning
-📷 OCR Pipeline (Tesseract)     ← Screenshot analysis  
-🎤 Audio Pipeline (Whisper)     ← Voice transcription
-📋 Log Parser                   ← System log analysis
-🤖 Agent Orchestrator          ← Multimodal coordination
-📓 Notebook Generator           ← Automated reporting
+Gemma 3n Inference Engine    ← Primary AI reasoning
+OCR Pipeline (Tesseract)     ← Screenshot analysis  
+Audio Pipeline (Whisper)     ← Voice transcription
+Log Parser                   ← System log analysis
+Agent Orchestrator          ← Multimodal coordination
+Notebook Generator           ← Automated reporting
 ```
 
 ### Multimodal Analysis Flow
@@ -96,7 +96,7 @@ print(f"Recommendations: {result.recommendations}")
 
 ---
 
-## 🎪 Demo Scenarios
+## Demo Scenarios
 
 ### 1. Phishing Screenshot Detection
 ```bash
@@ -147,16 +147,16 @@ python main.py --input-file assets/system_logs.txt --input-type logs
 
 ---
 
-## 📊 Use Cases & Impact
+## Use Cases & Impact
 
-### 🎯 Target Users
+### Target Users
 - **Journalists** in hostile environments
 - **NGO workers** in surveillance states  
 - **Activists** requiring operational security
 - **Remote workers** with limited IT support
 - **Field researchers** in low-connectivity areas
 
-### 🌍 Real-World Impact
+### Real-World Impact
 - **Privacy Protection:** No data leaves the device
 - **Threat Prevention:** Early warning for digital attacks
 - **Education:** Automated security awareness through reports
@@ -192,7 +192,7 @@ print(f'Accuracy: {sum(r.threat_detected for r in results)/len(results):.1%}')
 
 ---
 
-## 🏆 Competition Highlights
+## Competition Highlights
 
 ### Innovation Points
 1. **First Offline Multimodal Security AI** using Gemma 3n
@@ -239,7 +239,7 @@ sentinelgem/
 
 ---
 
-## 🎬 Video Demo
+## Video Demo
 
 **3-Minute Demonstration Video:** [Coming Soon]
 
@@ -252,7 +252,7 @@ sentinelgem/
 
 ---
 
-## 🔮 Future Roadmap
+## Future Roadmap
 
 ### Immediate (August 2025)
 - [ ] Mobile deployment (Android via MLC)
@@ -271,7 +271,7 @@ sentinelgem/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the cybersecurity and AI community!
 
@@ -292,13 +292,13 @@ flake8 src/ agents/ tests/
 
 ---
 
-## 📄 License
+## License
 
 MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Google** for the Gemma 3n model and Impact Challenge
 - **Hugging Face** for the Transformers library
@@ -308,10 +308,10 @@ MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Muzan Sano**  
-- Email: [Contact via GitHub Issues]
+- Email: [sanosensei36@gmail.com / research.unit734@proton.me]
 - Project: https://github.com/muzansano/sentinelgem
 - Competition: Google Gemma 3n Impact Challenge 2025
 
