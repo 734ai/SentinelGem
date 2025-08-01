@@ -1,0 +1,52 @@
+# SentinelGem: Offline Multimodal Cybersecurity Assistant
+# Author: Muzan Sano
+# Gemma 3n Impact Challenge 2025
+
+# Core ML/LLM Dependencies
+transformers>=4.40.0
+sentencepiece
+torch>=2.1.0
+accelerate
+bitsandbytes
+
+# Multimodal Processing
+pytesseract
+Pillow>=10.0.0
+opencv-python
+openai-whisper
+ffmpeg-python
+
+# Data Processing & NLP
+scikit-learn
+pandas
+numpy
+langdetect
+unstructured
+
+# Notebook Generation & Jupyter
+nbformat
+nbconvert
+jupyter
+ipykernel
+
+# Audio Processing
+librosa
+soundfile
+
+# Utilities & Monitoring
+rich
+psutil
+tqdm
+python-dotenv
+pyyaml
+
+# Optional UI Components
+streamlit
+plotly
+gradio
+
+# Development & Testing
+pytest
+black
+flake8
+mypy
