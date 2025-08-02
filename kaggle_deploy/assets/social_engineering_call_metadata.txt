@@ -1,0 +1,43 @@
+# Social Engineering Call Sample Metadata
+
+## Overview
+This synthetic audio file simulates a social engineering scam call with various
+voice anomalies and suspicious patterns that SentinelGem's audio pipeline
+is designed to detect and classify as a threat.
+
+## Embedded Patterns
+1. **Urgency Indicators**: Amplitude spikes at 3.0s, 7.5s, and 12.0s
+2. **Stress Patterns**: Pitch modulation indicating caller stress/deception
+3. **Background Noise**: Call center environment simulation
+4. **Compression Artifacts**: VoIP call quality degradation
+5. **Speech Pauses**: Unnatural speech rhythm with suspicious gaps
+
+## Expected Detection Results
+- **Threat Type**: social_engineering
+- **Confidence Score**: 0.75-0.85
+- **Detected Patterns**: urgency_language, stress_indicators, background_anomalies
+- **Processing Time**: ~1.2 seconds (for 15-second audio)
+
+## Technical Specifications
+- **Format**: WAV (PCM)
+- **Sample Rate**: 16kHz
+- **Duration**: 15.0 seconds
+- **Channels**: Mono
+- **Bit Depth**: 16-bit
+
+## Testing Usage
+This file serves as a comprehensive test case for:
+- Social engineering pattern detection
+- Voice stress analysis
+- Scam call identification
+- Background noise filtering
+- Real-time processing performance
+
+## Realistic Simulation
+This synthetic audio incorporates real-world characteristics of
+social engineering calls including:
+- Authority impersonation ("This is Microsoft calling...")
+- Urgency tactics ("Your computer has been compromised...")
+- Credential harvesting attempts ("Please provide your...")
+- Typical scam call audio artifacts
+- Psychological manipulation patterns

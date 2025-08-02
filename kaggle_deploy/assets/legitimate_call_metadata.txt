@@ -1,0 +1,42 @@
+# Legitimate Customer Service Call Metadata
+
+## Overview
+This synthetic audio file simulates a legitimate customer service interaction
+to serve as a baseline/control sample for testing SentinelGem's ability to
+distinguish between legitimate calls and social engineering attempts.
+
+## Embedded Patterns
+1. **Professional Tone**: Clear, measured delivery
+2. **Standard Scripts**: Common customer service language
+3. **Natural Pauses**: Normal conversation rhythm
+4. **Background**: Typical call center environment
+5. **Verification Process**: Standard identity verification
+
+## Expected Detection Results
+- **Threat Type**: benign
+- **Confidence Score**: 0.05-0.15 (low threat probability)
+- **Detected Patterns**: professional_speech, standard_verification
+- **Processing Time**: ~1.2 seconds (for 15-second audio)
+
+## Technical Specifications
+- **Format**: WAV (PCM)
+- **Sample Rate**: 16kHz
+- **Duration**: 15.0 seconds
+- **Channels**: Mono
+- **Bit Depth**: 16-bit
+
+## Testing Usage
+This file serves as a control sample for:
+- Baseline performance measurement
+- False positive rate testing
+- Legitimate call pattern recognition
+- System calibration
+- Accuracy validation
+
+## Realistic Simulation
+This synthetic audio represents normal customer service calls:
+- Standard greeting protocols
+- Professional verification procedures
+- Clear communication style
+- Normal background environment
+- No manipulation tactics

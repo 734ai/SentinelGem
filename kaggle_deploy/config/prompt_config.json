@@ -1,0 +1,71 @@
+{
+  "model_config": {
+    "gemma_model": "google/gemma-2-2b-it",
+    "whisper_model": "base",
+    "max_tokens": 512,
+    "temperature": 0.1,
+    "top_p": 0.9
+  },
+  
+  "detection_thresholds": {
+    "threat_confidence": 0.7,
+    "phishing_confidence": 0.8,
+    "social_engineering_confidence": 0.6,
+    "malware_confidence": 0.8,
+    "anomaly_confidence": 0.5
+  },
+  
+  "processing_limits": {
+    "max_file_size_mb": 50,
+    "max_audio_duration_minutes": 10,
+    "max_image_dimensions": [4096, 4096],
+    "max_text_length": 10000
+  },
+  
+  "prompts": {
+    "phishing_system_prompt": "You are a cybersecurity expert specializing in phishing detection. Analyze content for signs of phishing, social engineering, and credential harvesting attempts.",
+    
+    "log_analysis_prompt": "You are a SOC analyst reviewing system logs. Identify suspicious patterns, potential intrusions, and security anomalies using MITRE ATT&CK framework.",
+    
+    "audio_analysis_prompt": "You are analyzing audio transcriptions for social engineering attempts. Look for manipulation tactics, authority impersonation, and credential requests.",
+    
+    "general_threat_prompt": "You are a comprehensive cybersecurity analyst. Evaluate the provided content for any security threats, malicious patterns, or suspicious activities."
+  },
+  
+  "response_format": {
+    "required_fields": [
+      "threat_detected",
+      "confidence_score", 
+      "threat_type",
+      "description",
+      "recommendations"
+    ],
+    "confidence_levels": {
+      "low": [0.0, 0.3],
+      "medium": [0.3, 0.7],
+      "high": [0.7, 0.9],
+      "critical": [0.9, 1.0]
+    }
+  },
+  
+  "notebook_generation": {
+    "auto_generate": true,
+    "include_visualizations": true,
+    "include_code_samples": true,
+    "max_raw_text_length": 2000
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file_logging": true,
+    "console_logging": true
+  },
+  
+  "ui_settings": {
+    "theme": "dark",
+    "show_confidence_charts": true,
+    "auto_refresh_interval": 30,
+    "max_history_items": 100
+  }
+}

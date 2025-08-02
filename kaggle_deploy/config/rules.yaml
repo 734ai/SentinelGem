@@ -1,0 +1,145 @@
+# MITRE ATT&CK Based Threat Detection Rules
+# Author: Muzan Sano
+
+# Phishing Detection Rules
+phishing:
+  urgency_indicators:
+    - "act now"
+    - "urgent"
+    - "immediate"
+    - "expires today"
+    - "limited time"
+    - "final notice"
+    
+  credential_harvesting:
+    - "verify account"
+    - "update payment"
+    - "confirm identity"
+    - "login credentials"
+    - "password reset"
+    - "security verification"
+    
+  suspicious_domains:
+    - "bit.ly"
+    - "tinyurl.com"
+    - "t.co"
+    - "short.link"
+    - "click.here"
+    - "secure-bank"
+    - "paypal-secure"
+    
+  brand_impersonation:
+    - "paypal"
+    - "amazon"
+    - "microsoft"
+    - "google"
+    - "apple"
+    - "netflix"
+    - "facebook"
+
+# Malware Detection Patterns
+malware:
+  file_indicators:
+    - ".exe"
+    - ".scr"
+    - ".bat"
+    - ".cmd"
+    - ".vbs"
+    - ".jar"
+    
+  process_indicators:
+    - "powershell -enc"
+    - "cmd.exe /c"
+    - "regsvr32"
+    - "rundll32"
+    - "bitsadmin"
+    - "certutil"
+    
+  network_indicators:
+    - "http://[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+"
+    - "tcp://.*:[0-9]{4,5}"
+    - "download.*\\.exe"
+
+# Social Engineering Patterns
+social_engineering:
+  authority_claims:
+    - "this is microsoft"
+    - "this is your bank"
+    - "government agency"
+    - "technical support"
+    - "security department"
+    - "irs calling"
+    
+  fear_tactics:
+    - "account suspended"
+    - "security breach"
+    - "virus detected"
+    - "unauthorized access"
+    - "compromised"
+    - "fraud alert"
+    
+  trust_building:
+    - "to help you"
+    - "for your security"
+    - "to protect you"
+    - "verification purposes"
+    - "confirm your identity"
+
+# System Log Indicators
+system_logs:
+  suspicious_processes:
+    - "powershell.*-enc.*"
+    - "cmd.*\\/c.*echo.*"
+    - "reg.*add.*HKLM"
+    - "net.*user.*\\/add"
+    - "schtasks.*\\/create"
+    
+  network_anomalies:
+    - "connection.*refused"
+    - "timeout.*expired"
+    - "dns.*failed"
+    - "certificate.*error"
+    - "ssl.*handshake.*failed"
+    
+  file_system_events:
+    - "access.*denied"
+    - "file.*not.*found"
+    - "permission.*denied"
+    - "disk.*full"
+    - "corrupt.*file"
+
+# MITRE ATT&CK Technique Mappings
+mitre_tactics:
+  initial_access:
+    - "T1566"  # Phishing
+    - "T1190"  # Exploit Public-Facing Application
+    - "T1133"  # External Remote Services
+    
+  execution:
+    - "T1059"  # Command and Scripting Interpreter
+    - "T1204"  # User Execution
+    - "T1053"  # Scheduled Task/Job
+    
+  persistence:
+    - "T1547"  # Boot or Logon Autostart Execution
+    - "T1543"  # Create or Modify System Process
+    - "T1136"  # Create Account
+    
+  defense_evasion:
+    - "T1027"  # Obfuscated Files or Information
+    - "T1055"  # Process Injection
+    - "T1112"  # Modify Registry
+
+# Detection Thresholds
+thresholds:
+  phishing_confidence: 0.7
+  malware_confidence: 0.8
+  social_engineering_confidence: 0.6
+  system_anomaly_confidence: 0.5
+  
+# Scoring Weights
+scoring:
+  pattern_match_weight: 0.4
+  ai_analysis_weight: 0.6
+  context_bonus: 0.1
+  reputation_factor: 0.2
