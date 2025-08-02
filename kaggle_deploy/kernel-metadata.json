@@ -1,9 +1,8 @@
 {
-  "id": "muzansano/sentinelgem",
-  "title": "SentinelGem: Offline Multimodal Cybersecurity Assistant",
+  "title": "SentinelGem Production Offline Multimodal Cybersecurity Assistant",
   "code_file": "main.py",
   "language": "python",
-  "kernel_type": "notebook",
+  "kernel_type": "script",
   "is_private": "false",
   "enable_gpu": "false",
   "enable_internet": "false",

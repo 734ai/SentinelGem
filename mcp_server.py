@@ -47,7 +47,7 @@ def prepare_kaggle_notebook(notebook_title: str = "SentinelGem: Offline Multimod
             "title": notebook_title,
             "code_file": "main.py",
             "language": "python",
-            "kernel_type": "notebook",
+            "kernel_type": "script",
             "is_private": "false",
             "enable_gpu": "false",
             "enable_internet": "false",
@@ -108,8 +108,7 @@ def upload_to_kaggle(version_notes: str = "Updated SentinelGem project") -> str:
         try:
             result = subprocess.run([
                 "kaggle", "kernels", "push", 
-                "-p", ".",
-                "--version-notes", version_notes
+                "-p", "."
             ], capture_output=True, text=True)
             
             if result.returncode == 0:
