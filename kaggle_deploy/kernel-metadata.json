@@ -1,5 +1,6 @@
 {
-  "title": "SentinelGem Production Offline Multimodal Cybersecurity Assistant",
+  "id": "muzansano/sentinelgem",
+  "title": "SentinelGem: Privacy-First AI Cybersecurity",
   "code_file": "main.py",
   "language": "python",
   "kernel_type": "script",

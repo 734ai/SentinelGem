@@ -20,7 +20,7 @@ from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
 # Import SentinelGem components
-from .inference import ThreatAnalysis, get_inference_engine
+from src.inference import ThreatAnalysis, GemmaInference
 from ..agents.agent_loop import SentinelAgent
 from .ocr_pipeline import OCRPipeline
 from .audio_pipeline import AudioPipeline

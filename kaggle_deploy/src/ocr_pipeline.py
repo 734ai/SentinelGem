@@ -41,8 +41,12 @@ class OCRPipeline:
         if tesseract_path:
             pytesseract.pytesseract.tesseract_cmd = tesseract_path
         
-        # Initialize inference engine
-        self.inference = get_inference_engine()
+        # Initialize inference engine (optional for testing)
+        try:
+            self.inference = get_inference_engine()
+        except Exception as e:
+            logger.warning(f"Could not initialize inference engine: {e}")
+            self.inference = None
         
         # Phishing keywords and patterns
         self.phishing_indicators = self._load_phishing_patterns()

@@ -69,15 +69,21 @@ class GemmaInference:
         
         try:
             # Configure quantization for efficient inference
+            bnb_config = None
             if self.quantization:
-                bnb_config = BitsAndBytesConfig(
-                    load_in_4bit=True,
-                    bnb_4bit_use_double_quant=True,
-                    bnb_4bit_quant_type="nf4",
-                    bnb_4bit_compute_dtype=torch.bfloat16
-                )
-            else:
-                bnb_config = None
+                try:
+                    bnb_config = BitsAndBytesConfig(
+                        load_in_4bit=True,
+                        bnb_4bit_use_double_quant=True,
+                        bnb_4bit_quant_type="nf4",
+                        bnb_4bit_compute_dtype=torch.bfloat16
+                    )
+                except ImportError:
+                    logger.warning("bitsandbytes not available, disabling quantization")
+                    self.quantization = False
+                except Exception as e:
+                    logger.warning(f"Quantization setup failed: {e}, disabling quantization")
+                    self.quantization = False
             
             # Load tokenizer
             self.tokenizer = AutoTokenizer.from_pretrained(
