@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Competition](https://img.shields.io/badge/Google_Gemma_3n-Impact_Challenge_2025-ff6d01?style=for-the-badge)](https://www.kaggle.com/competitions/google-gemma-3n-hackathon)
 
-**🏆 Production-Ready AI Cybersecurity Solution for the Google Gemma 3n Impact Challenge 2025**
+**Production-Ready AI Cybersecurity Solution for the Google Gemma 3n Impact Challenge 2025**
 
 [🚀 Quick Start](#-quick-start) • [📋 Features](#-key-features) • [🏗️ Architecture](#-architecture) • [📊 Demo](#-live-demonstration) • [🔧 API](#-api-reference) • [📈 Results](#-performance-metrics)
 
@@ -17,11 +17,11 @@
 
 ---
 
-## 🎯 Executive Summary
+## Executive Summary
 
 **SentinelGem** is an enterprise-grade, privacy-first cybersecurity intelligence platform that leverages Google's revolutionary **Gemma 3n** model to deliver real-time threat detection and analysis. Built for high-stakes environments where privacy, reliability, and offline operation are paramount.
 
-### 🌟 Why SentinelGem?
+### Why SentinelGem?
 
 - **🔒 Privacy-First Design**: 100% offline operation, zero data exfiltration
 - **🧠 Advanced AI Intelligence**: Powered by Google Gemma 3n for superior threat reasoning
@@ -31,7 +31,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+ 
@@ -77,7 +77,7 @@ python main.py --input-file assets/malware_logs.txt --input-type logs
 <tr>
 <td width="50%">
 
-### 🎯 **Core Capabilities**
+### **Core Capabilities**
 - **Advanced Threat Detection**: Phishing, social engineering, malware analysis
 - **Multimodal Intelligence**: Audio, visual, text, and log analysis
 - **Real-Time Processing**: <2s response time for critical threats
@@ -87,7 +87,7 @@ python main.py --input-file assets/malware_logs.txt --input-type logs
 </td>
 <td width="50%">
 
-### 🛡️ **Security Features**
+### **Security Features**
 - **Zero Data Exfiltration**: All processing remains on-device
 - **Enterprise-Grade Encryption**: Secure data handling throughout pipeline
 - **MITRE ATT&CK Integration**: Industry-standard threat classification
@@ -98,7 +98,7 @@ python main.py --input-file assets/malware_logs.txt --input-type logs
 </tr>
 </table>
 
-### 🎨 **Threat Detection Capabilities**
+### **Threat Detection Capabilities**
 
 | Threat Vector | Detection Method | Accuracy | Response Time |
 |---------------|------------------|----------|---------------|
@@ -141,7 +141,7 @@ graph TB
 <tr>
 <td width="33%">
 
-#### 🧠 **AI Engine**
+#### **AI Engine**
 - **Google Gemma 3n** (2B/4B params)
 - **Quantized Inference** (4-bit optimization)
 - **Multimodal Fusion** Architecture
@@ -306,7 +306,7 @@ for sample in samples:
 <tr>
 <td width="25%">
 
-#### **👨‍💻 Security Professionals**
+#### **Security Professionals**
 - SOC analysts
 - Incident responders
 - Threat hunters
@@ -315,7 +315,7 @@ for sample in samples:
 </td>
 <td width="25%">
 
-#### **📰 High-Risk Users**
+#### **High-Risk Users**
 - Investigative journalists
 - Human rights activists
 - NGO field workers
@@ -333,7 +333,7 @@ for sample in samples:
 </td>
 <td width="25%">
 
-#### **🔒 Privacy-Conscious**
+#### **Privacy-Conscious**
 - Remote workers
 - Freelancers
 - Researchers
@@ -352,7 +352,7 @@ for sample in samples:
 
 ---
 
-## 🔬 Technical Specifications
+## Technical Specifications
 
 ### Model Architecture
 ```python
@@ -417,17 +417,17 @@ UI/Visualization:
 - ✅ **Production-Ready Deployment** with comprehensive testing
 
 #### **Technical Excellence**
-- 🔬 **Advanced Multimodal Fusion** of text, image, and audio analysis
+- **Advanced Multimodal Fusion** of text, image, and audio analysis
 - ⚡ **Optimized On-Device Inference** with 4-bit quantization
-- 🎯 **MITRE ATT&CK Integration** for industry-standard threat classification  
+- **MITRE ATT&CK Integration** for industry-standard threat classification  
 - 🛡️ **Enterprise-Grade Security** with zero data exfiltration
 - 📊 **Comprehensive Evaluation** with real-world datasets
 
 #### **Social Impact**
 - 🌍 **Global Reach**: Protecting vulnerable users worldwide
 - 🎓 **Educational Value**: Automated security awareness training
-- 💪 **Empowerment**: Bridging cybersecurity skills gap with AI
-- 🤝 **Community Benefit**: Open-source contribution to digital safety
+-  **Empowerment**: Bridging cybersecurity skills gap with AI
+-  **Community Benefit**: Open-source contribution to digital safety
 
 ---
 
@@ -449,7 +449,7 @@ UI/Visualization:
 
 ---
 
-## 🤝 Contributing & Community
+## Contributing & Community
 
 We welcome contributions from the global cybersecurity and AI community!
 
@@ -478,7 +478,7 @@ mypy src/
 - 🧪 **Testing**: Dataset creation, performance benchmarking, edge case testing
 - 📚 **Documentation**: User guides, API documentation, tutorial creation
 - 🌍 **Localization**: Multi-language support, regional threat intelligence
-- 🎨 **UI/UX**: Dashboard improvements, mobile interfaces, accessibility
+- **UI/UX**: Dashboard improvements, mobile interfaces, accessibility
 
 ---
 
