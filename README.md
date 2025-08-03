@@ -823,7 +823,7 @@ MIT License - See [LICENSE](LICENSE) for details
 
 **Muzan Sano**  
 - Email: [sanosensei36@gmail.com / research.unit734@proton.me]
-- Project: https://github.com/muzansano/sentinelgem
+- Project: https://github.com/734ai/SentinelGem
 - Competition: Google Gemma 3n Impact Challenge 2025
 
 ---
