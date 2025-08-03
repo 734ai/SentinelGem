@@ -497,7 +497,7 @@ SentinelGem is committed to open-source principles while maintaining enterprise-
 
 ### **Project Team**
 **Lead Developer**: Muzan Sano  
-**Organization**: 734AI Research Unit  
+**Organization**: NorthernTribe Research
 **Competition**: Google Gemma 3n Impact Challenge 2025
 
 ### **Get in Touch**
